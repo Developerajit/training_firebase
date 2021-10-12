@@ -16,7 +16,6 @@ class AuthController extends GetxController {
   void onReady()async {
     super.onReady();
     _firebaseUser.bindStream(auth.authStateChanges());
-    //ever(_firebaseUser, _setInitialScreen);
   }
 
 
